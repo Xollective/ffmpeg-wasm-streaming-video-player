@@ -1,4 +1,4 @@
-var serviceWorkerVersion = 3;
+var serviceWorkerVersion = 4;
 var forceLoadServiceWorker = false;
 var disableServiceWorker = false;
 // Logic in the following block is used to force a reload of the service worker on every refresh
