@@ -15,7 +15,7 @@ if (disableServiceWorker) {
 }
 else if (("serviceWorker" in navigator)) {
     // Register service worker
-    navigator.serviceWorker.register("/sw.headers.js?v=" + serviceWorkerVersion).then(function (registration) {
+    navigator.serviceWorker.register("sw.headers.js?v=" + serviceWorkerVersion).then(function (registration) {
         console.log("COOP/COEP Service Worker registered", registration.scope);
         // If the registration is active, but it's not controlling the page
         if ((registration.active && !navigator.serviceWorker.controller) || (typeof SharedArrayBuffer === 'undefined')) {
